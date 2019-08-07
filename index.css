@@ -1,0 +1,85 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lacquer', sans-serif;
+}
+
+nav#navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav#navbar > div.links{
+  padding: 1% 1% 0 0;
+  font-size: 1.5rem;
+  text-align: right;
+  font-family: 'Karla', sans-serif;
+}
+
+nav#navbar > div.links > a {
+  margin: 0 1%;
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+}
+
+section#welcome-section > h1, section#welcome-section > div, #welcome-section, section#contact-section {
+text-align: center;
+margin-top: 15%;
+}
+
+h1, #projects > h1  {
+  font-size: 4rem;
+}
+
+section#welcome-section > div {
+  font-size: 2rem;
+  font-family: 'Karla', sans-serif;
+}
+
+
+.project-title {
+  font-size: 2rem;
+  font-family: 'Karla', sans-serif;
+
+}
+
+i {
+  margin: 4% 2%;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+}
+
+.code {
+  color: gray;
+  transition: color 0.3s ease-out
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+img {
+ border-radius: 10% 10% 10% 10%;
+}
+
+#red {
+  color: red;
+}
+#grn {
+  color: green;
+}
+#contact-section {
+  display: block;
+  margin: 20% 0 0 0;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+}
