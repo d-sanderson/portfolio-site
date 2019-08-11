@@ -23,15 +23,37 @@ nav#navbar > div.links > a {
 }
 
 section {
-  height: 100vh;
+  flex:4 1 auto;
+  display: flex;
 }
 
-section#welcome-section > h1, section#welcome-section > div, #welcome-section, section#contact-section {
-text-align: center;
-margin-top: 15%;
+section#welcome-section, section#contact-section, #social {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
-h1, #projects > h1  {
+#welcome-section > #greeting {
+  margin-top: 10%;
+}
+
+section#projects-section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  flex-direction: row;
+  margin-bottom: 10%;
+}
+
+.social-media > i {
+  padding: 10% 10%;
+}
+
+h1, #projects-section > h1  {
   font-size: 4rem;
 }
 
@@ -40,33 +62,16 @@ section#welcome-section > div {
   font-family: 'Karla', sans-serif;
 }
 
-
 .project-title {
   font-size: 2rem;
-  font-family: 'Karla', sans-serif;
+  /* font-family: 'Karla', sans-serif; */
   margin: 3% 0;
-
 }
 
-i {
-  margin: 4% 2%;
+#tagline {
+  margin: 8% 0 8% 0;
 }
 
-#projects {
-  margin: 20% 0 40% 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* align horizontal */
-  align-items: center;
-}
-
-#social {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* align horizontal */
-  align-items: center;
-
-}
 .code {
   color: gray;
   transition: color 0.3s ease-out;
@@ -75,20 +80,11 @@ i {
 .project-title:hover {
   color: #ff7f50;
 }
+
 img {
  border-radius: 10% 10% 10% 10%;
 }
 
-#red {
-  color: red;
-}
-#grn {
-  color: green;
-}
-#contact-section {
-  display: block;
-  margin: 20% 0 0 0;
-}
 @media (min-width: 320px) and (max-width: 480px) {
 
 }
@@ -128,6 +124,6 @@ img {
     top: 10px;
   }
   90% {
-    top: -10
+    bottom: -10
   }
 }
