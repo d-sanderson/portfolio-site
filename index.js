@@ -18,4 +18,17 @@ setInterval( () => {
 //   span.style.color = getRandomColor()
 // ,20000}))}, 5000);
 
-
+// CSS Animation of the project 
+//inserts spans and class of either up or down on each letter for
+let projectTaglineStr = document.getElementById('projects-tagline').innerText
+let projectTaglineArr = projectTaglineStr.split('')
+let output = projectTaglineArr.map( (el, i) => {
+  if(i % 2 == 0) {
+    el = `<span class="up">${el}</span>`
+  }
+  else {
+    el = `<span class="down">${el}</span>`
+  }
+  return el;
+})
+document.getElementById('projects-tagline').innerHTML = output.join('')
