@@ -44,6 +44,7 @@ section#welcome-section > div {
 .project-title {
   font-size: 2rem;
   font-family: 'Karla', sans-serif;
+  margin: 3% 0;
 
 }
 
@@ -52,18 +53,26 @@ i {
 }
 
 #projects {
+  margin: 20% 0 40% 0;
   display: flex;
   flex-direction: column;
   justify-content: center; /* align horizontal */
   align-items: center;
 }
 
+#social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+
+}
 .code {
   color: gray;
-  transition: color 0.3s ease-out
+  transition: color 0.3s ease-out;
 }
 
-.project:hover .code {
+.project-title:hover {
   color: #ff7f50;
 }
 img {
@@ -82,4 +91,43 @@ img {
 }
 @media (min-width: 320px) and (max-width: 480px) {
 
+}
+
+.up {
+  animation: MoveUpDown 1s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.down {
+  animation: MoveDownUp 1s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+
+  }
+  90% {
+    bottom: -10
+  }
+}
+
+@keyframes MoveDownUp {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 10px;
+  }
+  90% {
+    top: -10
+  }
 }
