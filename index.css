@@ -4,12 +4,37 @@ body {
   font-family: 'Lacquer', sans-serif;
 }
 
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+body.dark-mode a {
+  color: #eee;
+}
+body.dark-mode button {
+  background-color: #eee;
+  color: #111;
+}
+
+body.light-mode {
+  background-color: #eee;
+  color: #111;
+}
+body.light-mode a {
+  color: #111;
+}
+body.light-mode button {
+  background-color: #111;
+  color: #eee;
+}
+
 nav#navbar {
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
 }
+
 nav#navbar > div.links{
   padding: 1% 1% 0 0;
   font-size: 1.5rem;
@@ -17,13 +42,19 @@ nav#navbar > div.links{
   font-family: 'Karla', sans-serif;
 }
 
+nav#navbar > div.btn{
+  padding: 2% 0 0 2%;
+  font-size: 1.5rem;
+  text-align: left;
+
+}
 nav#navbar > div.links > a {
   margin: 0 1%;
   text-decoration: none;
 }
 
 section {
-  flex:4 1 auto;
+  flex:1 1 auto;
   display: flex;
 }
 
@@ -88,6 +119,9 @@ img {
 @media (min-width: 320px) and (max-width: 480px) {
 
 }
+
+
+
 
 .up {
   animation: MoveUpDown 1s linear infinite;

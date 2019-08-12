@@ -18,7 +18,7 @@ setInterval( () => {
 //   span.style.color = getRandomColor()
 // ,20000}))}, 5000);
 
-// CSS Animation of the project 
+// CSS Animation of the project
 //inserts spans and class of either up or down on each letter for
 let projectTaglineStr = document.getElementById('projects-tagline').innerText
 let projectTaglineArr = projectTaglineStr.split('')
@@ -32,3 +32,10 @@ let output = projectTaglineArr.map( (el, i) => {
   return el;
 })
 document.getElementById('projects-tagline').innerHTML = output.join('')
+
+
+function toggleDarkLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}
