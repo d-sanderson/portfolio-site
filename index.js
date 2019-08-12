@@ -1,5 +1,5 @@
 let spans = document.querySelectorAll(".ltr")
-let projectTagline = document.getElementById('projects-tagline').innerText;
+
 
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
@@ -20,6 +20,7 @@ setInterval( () => {
 
 // CSS Animation of the project
 //inserts spans and class of either up or down on each letter for
+let projectTagline = document.getElementById('projects-tagline');
 let projectTaglineStr = document.getElementById('projects-tagline').innerText
 let projectTaglineArr = projectTaglineStr.split('')
 let output = projectTaglineArr.map( (el, i) => {
@@ -31,7 +32,7 @@ let output = projectTaglineArr.map( (el, i) => {
   }
   return el;
 })
-document.getElementById('projects-tagline').innerHTML = output.join('')
+projectTagline.innerHTML = output.join('')
 
 
 function toggleDarkLight() {

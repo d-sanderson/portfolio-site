@@ -99,6 +99,7 @@ section#welcome-section > div {
   margin: 3% 0;
 }
 
+
 #tagline {
   margin: 8% 0 8% 0;
 }
@@ -145,8 +146,8 @@ img {
     bottom: 10px;
 
   }
-  90% {
-    bottom: -10
+  75% {
+    bottom: -10px
   }
 }
 
@@ -157,7 +158,7 @@ img {
   50% {
     top: 10px;
   }
-  90% {
-    bottom: -10
+  75% {
+    top: -10px
   }
 }
