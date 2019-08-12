@@ -65,6 +65,10 @@ section#welcome-section, section#contact-section {
 
 }
 
+a {
+  text-decoration: none;
+}
+
 #welcome-section > .greeting {
   margin-top: 10%;
 }
@@ -97,10 +101,8 @@ section#welcome-section > div {
   font-family: 'Karla', sans-serif;
 }
 
-.project-title {
+#projects-section > a {
   font-size: 2rem;
-  /* font-family: 'Karla', sans-serif; */
-  margin: 3% 0;
 }
 
 
@@ -121,11 +123,16 @@ img {
  border-radius: 10% 10% 10% 10%;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   .projects-tagline.short, .greeting.short, .contact-title.short {
     display: inline-block;
     text-align: center;
     padding-top: 10%;
+  }
+
+  .contact-title.short {
+
+    padding-bottom: 15%;
   }
   .projects-tagline, .greeting {
     display: none;
@@ -137,6 +144,10 @@ img {
 
   #tagline {
     text-align: center
+  }
+
+  .project-title {
+    margin: 10% 0;
   }
 }
 
