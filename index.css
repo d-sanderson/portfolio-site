@@ -111,7 +111,7 @@ section#welcome-section > div {
   transition: color 0.3s ease-out;
 }
 
-.project-title:hover {
+.project-title:hover, nav#navbar > div.links > a:hover, i:hover {
   color: #ff7f50;
 }
 
