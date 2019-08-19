@@ -75,6 +75,17 @@ function getRandomColor() {
   return color;
 }
 
+let links = document.querySelectorAll('#hvr-icns, .link').forEach(element => {
+  element.addEventListener('mouseover', function() {
+    element.style.color = getRandomColor()
+  });
+
+  element.addEventListener('mouseout', function() {
+    element.style.color = 'white';
+  });
+});
+
+
 
 
 // setTimeout(function () {spans.forEach(span => setInterval( () => {
