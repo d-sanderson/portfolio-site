@@ -61,7 +61,6 @@ nav#navbar > div.links > a {
 
 .link:not( :hover ){
   transition: .5s ease-out;
-  margin: 0;
  }
 
 section {
